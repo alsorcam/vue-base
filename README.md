@@ -1,5 +1,9 @@
 # vue-base
 
+- Vue 2.6.10
+- Bulma 0.8.0
+- Buefy 0.8.8
+
 ## Project setup
 ```
 npm install
@@ -19,6 +23,3 @@ npm run build
 ```
 npm run lint
 ```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
