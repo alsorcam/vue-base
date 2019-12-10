@@ -3,6 +3,8 @@
 - Vue 2.6.10
 - Bulma 0.8.0
 - Buefy 0.8.8
+- Vuex 3.1.2
+- Vue-i18n 8.15.1
 
 ## Project setup
 ```
