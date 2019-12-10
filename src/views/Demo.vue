@@ -41,6 +41,10 @@ export default class DemoComponent extends Vue {
       urlName: 'i18n'
     },
     {
+      label: 'Messages',
+      urlName: 'messages'
+    },
+    {
       label: 'Fake backend',
       urlName: ''
     },
