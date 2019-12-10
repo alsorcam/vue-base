@@ -30,27 +30,22 @@ export default class DemoComponent extends Vue {
   readonly navConfig = [
     {
       label: 'Routing',
-      disabled: false,
       urlName: 'routing'
     },
     {
       label: 'Screen lock',
-      disabled: false,
       urlName: 'screenLock'
     },
     {
       label: 'Internationalization',
-      disabled: true,
-      urlName: ''
+      urlName: 'i18n'
     },
     {
       label: 'Fake backend',
-      disabled: true,
       urlName: ''
     },
     {
       label: 'Vuex',
-      disabled: true,
       urlName: ''
     }
   ];
