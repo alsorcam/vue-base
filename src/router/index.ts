@@ -16,7 +16,9 @@ const routes = [
     name: 'demo',
     component: Demo,
     children: [
-      { path: 'screenLock', name: 'screenLock', component: () => import('../views/Screen-Lock.vue')}
+      { path: '/', redirect: '/demo/routing' },
+      { path: 'screenLock', name: 'screenLock', component: () => import('../views/Screen-Lock.vue')},
+      { path: 'routing', name: 'routing', component: () => import('../views/Routing.vue')}
     ]
   }
 ];

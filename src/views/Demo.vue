@@ -29,14 +29,14 @@ export default class DemoComponent extends Vue {
 
   readonly navConfig = [
     {
+      label: 'Routing',
+      disabled: false,
+      urlName: 'routing'
+    },
+    {
       label: 'Screen lock',
       disabled: false,
       urlName: 'screenLock'
-    },
-    {
-      label: 'Routing',
-      disabled: true,
-      urlName: ''
     },
     {
       label: 'Internationalization',
