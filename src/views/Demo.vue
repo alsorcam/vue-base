@@ -6,15 +6,17 @@
           <h1 class="navbar-item title has-text-white">DEMO</h1>
         </template>
         <template slot="end">
-          <b-navbar-item v-for="(element, index) of navConfig" :key="index"
-            tag="router-link" :to="{name: element.urlName}">
+          <b-navbar-item v-for="(element, index) of navConfig" :key="index" @click="navigate(element)">
             {{element.label}}
           </b-navbar-item>
         </template>
       </b-navbar>
     </div>
     <div class="hero-body">
-      <router-view></router-view>
+      <div class="box container content section">
+        <h1 class="subtitle has-text-primary">{{sectionLabel}}</h1>
+        <router-view></router-view>
+      </div>
     </div>
   </div>
 </template>
@@ -43,15 +45,17 @@ export default class DemoComponent extends Vue {
     {
       label: 'Messages',
       urlName: 'messages'
-    },
-    {
-      label: 'Fake backend',
-      urlName: ''
-    },
-    {
-      label: 'Vuex',
-      urlName: ''
     }
   ];
+
+  sectionLabel: string = this.navConfig[0].label.toUpperCase();
+
+  navigate(element: any) {
+    // Duplicated navigation raises errors
+    if (element.label.toUpperCase() !== this.sectionLabel) {
+      this.sectionLabel = element.label.toUpperCase();
+      this.$router.push({name: element.urlName});
+    }
+  }
 }
 </script>

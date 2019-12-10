@@ -1,13 +1,12 @@
 <template>
-  <div class="box container content section">
-    <h1 class="subtitle has-text-danger">INTERNATIONALIZATION (i18n)</h1>
-      <p>
-        The text below is translated to the selected language.
-      </p>
-      <p class="is-family-code">
-        {{$t('demo.helloWorld')}} <br/>
-        {{$t('demo.phrase')}}
-      </p>
+  <div>
+    <p>
+      The text below is translated to the selected language.
+    </p>
+    <p class="is-family-code">
+      {{$t('demo.helloWorld')}} <br/>
+      {{$t('demo.phrase')}}
+    </p>
     <div class="buttons">
       <b-button type="is-primary" @click="changeLang('en')">EN</b-button>
       <b-button type="is-primary" @click="changeLang('es')">ES</b-button>

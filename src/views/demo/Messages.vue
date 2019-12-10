@@ -1,6 +1,5 @@
 <template>
-  <div class="box container content section">
-    <h1 class="subtitle has-text-danger">MESSAGES</h1>
+  <div>
     <p>
       Two ways of letting the user now that something has happened.
       <br />

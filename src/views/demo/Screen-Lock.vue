@@ -1,10 +1,9 @@
 <template>
-  <div class="box container content section">
-    <h1 class="subtitle has-text-danger">SCREEN LOCK</h1>
-      <p>
-        This opens the loading component to block user interaction in the app during a custom interval of seconds.
-        Ideally, the closing function would be called from another functionality like ending a backend service call to fetch data.
-      </p>
+  <div>
+    <p>
+      This opens the loading component to block user interaction in the app during a custom interval of seconds.
+      Ideally, the closing function would be called from another functionality like ending a backend service call to fetch data.
+    </p>
     <div>
       <b-field grouped>
         <b-numberinput min="1" max="6" v-model="timeout" type="is-outlined is-primary">
