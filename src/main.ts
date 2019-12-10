@@ -5,7 +5,7 @@ import router from './router';
 import store from './store';
 
 import Buefy from 'buefy';
-import 'buefy/dist/buefy.css';
+import './assets/theme/default.scss';
 import './assets/styles.scss';
 
 import VueI18n from 'vue-i18n';
