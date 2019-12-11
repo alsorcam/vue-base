@@ -5,13 +5,13 @@ import router from './router';
 import store from './store';
 
 import Buefy from 'buefy';
-import './assets/theme/default.scss';
+
 import './assets/styles.scss';
 
 import VueI18n from 'vue-i18n';
 import messages from './assets/i18n';
 
-Vue.use(Buefy);
+Vue.use(Buefy, { defaultIconPack: 'fas' });
 Vue.config.productionTip = false;
 
 Vue.use(VueI18n);

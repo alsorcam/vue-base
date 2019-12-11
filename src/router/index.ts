@@ -13,14 +13,14 @@ const routes = [
   },
   {
     path: '/demo',
-    name: 'demo',
     component: Demo,
     children: [
       { path: '/', redirect: '/demo/routing' },
       { path: 'screenLock', name: 'screenLock', component: () => import('../views/demo/Screen-Lock.vue')},
       { path: 'routing', name: 'routing', component: () => import('../views/demo/Routing.vue')},
       { path: 'i18n', name: 'i18n', component: () => import('../views/demo/Internationalization.vue')},
-      { path: 'messages', name: 'messages', component: () => import('../views/demo/Messages.vue')}
+      { path: 'messages', name: 'messages', component: () => import('../views/demo/Messages.vue')},
+      { path: 'themes', name: 'themes', component: () => import('../views/demo/Themes.vue')}
     ]
   }
 ];

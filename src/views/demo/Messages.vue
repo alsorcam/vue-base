@@ -10,10 +10,10 @@
     </p>
     <div>
       <div class="block">
-        <b-radio v-model="radio" name="level" native-value="danger">Danger</b-radio>
-        <b-radio v-model="radio" name="level" native-value="warning">Warning</b-radio>
-        <b-radio v-model="radio" name="level" native-value="info">Info</b-radio>
-        <b-radio v-model="radio" name="level" native-value="question">Question</b-radio>
+        <b-radio v-model="radio" name="level" type="is-secondary" native-value="danger">Danger</b-radio>
+        <b-radio v-model="radio" name="level" type="is-secondary" native-value="warning">Warning</b-radio>
+        <b-radio v-model="radio" name="level" type="is-secondary" native-value="info">Info</b-radio>
+        <b-radio v-model="radio" name="level" type="is-secondary" native-value="question">Question</b-radio>
       </div>
       <div class="buttons">
         <b-button type="is-primary" @click="openDialog">Open Dialog</b-button>

@@ -5,7 +5,9 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "scss": "node-sass src/assets/sass -o public",
+    "start": "npm run scss && npm run serve"
   },
   "dependencies": {
     "buefy": "^0.8.8",

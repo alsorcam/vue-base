@@ -29,7 +29,6 @@ class DialogService {
   private dialogConfig(level: string, message: string) {
     const config = {
       hasIcon: true,
-      iconPack: 'fa',
       ariaRole: 'alertdialog',
       ariaModal: true,
       canCancel: false

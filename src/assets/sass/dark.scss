@@ -1,0 +1,44 @@
+@import "../../../node_modules/bulma/sass/utilities/_all.sass";
+@import './variables';
+
+// Set your colors
+$primary: #DAA81B;
+$primary-invert: $background-invert;
+$secondary: #8ad5ff;
+$secondary-invert: $background-invert;
+$background-medium: #616161;
+$background-light: #c0c0c0;
+
+// Setup $colors to use as bulma classes (e.g. 'is-dark')
+$colors: (
+  "background": ($background-invert, $background),
+  "primary": ($primary, $primary-invert),
+  "secondary": ($secondary, $secondary-invert),
+  "info": ($info, $info-invert),
+  "danger": ($danger, $danger-invert),
+  "warning": ($warning, $warning-invert),
+);
+
+@import "../../../node_modules/bulma/bulma.sass";
+@import "../../../node_modules/buefy/src/scss/buefy.scss";
+
+.box {
+  background-color: $background-medium;
+  color: $background;
+}
+
+.hero.is-background .navbar-item,
+.hero.is-background .navbar-link {
+  color: $background;
+
+}
+.hero.is-background a.navbar-item:hover,
+.hero.is-background a.navbar-item.is-active,
+.hero.is-background .navbar-link:hover,
+.hero.is-background .navbar-link.is-active {
+  color: $background-light;
+}
+
+.checkbox:hover, .radio:hover {
+  color: $white;
+}

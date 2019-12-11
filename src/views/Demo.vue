@@ -3,7 +3,9 @@
     <div class="hero-head">
       <b-navbar :transparent="true">
         <template slot="brand">
-          <h1 class="navbar-item title has-text-white">DEMO</h1>
+          <b-navbar-item tag="router-link" :to="{name:'home'}" class="is-size-1 has-text-weight-bold has-text-primary">
+            DEMO
+          </b-navbar-item>
         </template>
         <template slot="end">
           <b-navbar-item v-for="(element, index) of navConfig" :key="index" @click="navigate(element)">
@@ -14,7 +16,7 @@
     </div>
     <div class="hero-body">
       <div class="box container content section">
-        <h1 class="subtitle has-text-primary">{{sectionLabel}}</h1>
+        <h1 class="subtitle has-text-secondary">{{sectionLabel}}</h1>
         <router-view></router-view>
       </div>
     </div>
@@ -25,9 +27,11 @@
 import { Component, Vue } from 'vue-property-decorator';
 
 import router from '@/router';
+import { Getter } from 'vuex-class';
 
 @Component
 export default class DemoComponent extends Vue {
+  @Getter('cssPath') cssPath!: () => string;
 
   readonly navConfig = [
     {
@@ -45,6 +49,10 @@ export default class DemoComponent extends Vue {
     {
       label: 'Messages',
       urlName: 'messages'
+    },
+    {
+      label: 'Themes',
+      urlName: 'themes'
     }
   ];
 

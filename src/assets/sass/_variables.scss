@@ -1,0 +1,13 @@
+// Set your colors
+$background: #EAEAEA;
+$background-invert: #404040;
+$info: #3B8996;
+$info-invert: findColorInvert($primary);
+$danger: #B23B3B;
+$danger-invert: findColorInvert($danger);
+$warning: #E9C300;
+$warning-invert: findColorInvert($warning);
+$primary: #7E234C;
+$primary-invert: findColorInvert($primary);
+$secondary: #DAA81B;
+$secondary-invert: findColorInvert($secondary);

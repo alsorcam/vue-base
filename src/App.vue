@@ -1,5 +1,5 @@
 <template>
-  <section id="app" class="hero is-dark is-fullheight">
+  <section id="app" class="hero is-background is-fullheight">
     <router-view></router-view>
     <b-loading :is-full-page="isLoadingFullPage" :active.sync="isLoading" :can-cancel="false"></b-loading>
   </section>

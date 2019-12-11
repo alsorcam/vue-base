@@ -1,0 +1,31 @@
+@import "../../../node_modules/bulma/sass/utilities/_all.sass";
+@import './variables';
+
+// Set your colors
+$danger: #F25F5C;
+$danger-invert: findColorInvert($danger);
+$warning: #FFE066;
+$warning-invert: findColorInvert($warning);
+$info: #7FBFDB;
+$info-invert: findColorInvert($info);
+
+$background: #D8DBE2;
+$background-invert: findColorInvert($background);
+
+$secondary: #DAA49A;
+$secondary-invert: findColorInvert($secondary);
+$primary: #373F51;
+$primary-invert: findColorInvert($primary);
+
+// Setup $colors to use as bulma classes (e.g. 'is-dark')
+$colors: (
+  "background": ($background, $background-invert),
+  "primary": ($primary, $primary-invert),
+  "secondary": ($secondary, $secondary-invert),
+  "info": ($info, $info-invert),
+  "danger": ($danger, $danger-invert),
+  "warning": ($warning, $warning-invert),
+);
+
+@import "../../../node_modules/bulma/bulma.sass";
+@import "../../../node_modules/buefy/src/scss/buefy.scss";
